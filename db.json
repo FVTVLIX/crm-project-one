@@ -1,0 +1,36 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "CustID": 13084,
+      "PeopleID": 28467,
+      "AgreeID": 20288,
+      "FirstName": "Ted",
+      "LastName": "Flanders",
+      "AgreementNumber": "10015316",
+      "CreditsPaid": 43.333,
+      "Term": 78,
+      "SemiRate": 196.26,
+      "MonthlyRate": 392.5,
+      "DaysLate": 131,
+      "RentalDeferment": -0.99,
+      "Comments": "This is a comment"
+    },
+    {
+      "id": 2,
+      "CustID": 23534,
+      "PeopleID": 67467,
+      "AgreeID": 35208,
+      "FirstName": "Hugh",
+      "LastName": "Jazz",
+      "AgreementNumber": "10067426",
+      "CreditsPaid": 20,
+      "Term": 72,
+      "SemiRate": 196.26,
+      "MonthlyRate": 392.5,
+      "DaysLate": 153,
+      "RentalDeferment": 46.98,
+      "Comments": "This is a comment"
+    }
+  ]
+}
