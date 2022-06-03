@@ -31,6 +31,38 @@
       "DaysLate": 153,
       "RentalDeferment": 46.98,
       "Comments": "This is a comment times two"
+    },
+    {
+      "FirstName": "big",
+      "LastName": "booty",
+      "AgreementNumber": "21345235",
+      "CreditsPaid": "23",
+      "Term": "80",
+      "DaysLate": "1234",
+      "RentalDeferment": "23.23",
+      "Comments": "",
+      "id": 3
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": {
+        "en": "Paid"
+      },
+      "published": 1
+    },
+    {
+      "name": {
+        "en": "Commitment"
+      },
+      "id": 2
+    },
+    {
+      "name": {
+        "en": "Completed"
+      },
+      "id": 3
     }
   ]
 }
