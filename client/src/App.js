@@ -2,11 +2,11 @@ import React from 'react'
 import { Admin, Resource } from 'react-admin';
 import dataProvider from './dataProvider';
 import restProvider from 'ra-data-simple-rest'
-import CustomerList from './components/CustomerList'
-import CustomerCreate from './components/CustomerCreate'
-import CustomerEdit from './components/CustomerEdit'
+import CustomerList from './components/customers/CustomerList'
+import CustomerCreate from './components/customers/CustomerCreate'
+import CustomerEdit from './components/customers/CustomerEdit'
+import CustomerShow from './components/customers/CustomerShow';
 import Layout from './Layout'
-import tags from './components/tags';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
     theme={{
         palette: {
             background: {
-                default: '#fafafb',
+                default: '#fafafd',
             },
         },
     }
@@ -26,9 +26,8 @@ function App() {
       <Resource name='customers' 
       list={CustomerList}
       create={CustomerCreate} 
+      show={CustomerShow}
       edit={CustomerEdit} />
-
-      <Resource name='tags' {...tags} />
     </Admin>
   );
 }

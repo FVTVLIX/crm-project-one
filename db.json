@@ -7,6 +7,7 @@
       "AgreeID": 20288,
       "FirstName": "Ted",
       "LastName": "Flanders",
+      "PhoneNumber": "615-459-5194",
       "AgreementNumber": "10015316",
       "CreditsPaid": 43.333,
       "Term": 78,
@@ -23,6 +24,7 @@
       "AgreeID": 35208,
       "FirstName": "Hugh",
       "LastName": "Jazz",
+      "PhoneNumber": "615-459-5194",
       "AgreementNumber": "10067426",
       "CreditsPaid": 20,
       "Term": 72,
@@ -35,15 +37,17 @@
     {
       "FirstName": "big",
       "LastName": "booty",
+      "PhoneNumber": "615-459-5194",
       "AgreementNumber": "21345235",
       "CreditsPaid": "23",
       "Term": "80",
       "DaysLate": "1234",
       "RentalDeferment": "23.23",
-      "Comments": "",
+      "Comments": "He owes us a lot of money",
       "id": 3
     }
   ],
+
   "tags": [
     {
       "id": 1,
@@ -63,6 +67,27 @@
         "en": "Completed"
       },
       "id": 3
+    }
+  ],
+
+  "comments": [
+    {
+      "id": 1,
+      "comment_id": 1,
+      "body": "This is a comment",
+      "created_at": "02/02/2020"
+    },
+    {
+      "id": 2,
+      "comment_id": 2,
+      "body": "This is a comment times two",
+      "created_at": "06/31/2023"
+    },
+    {
+      "id": 3,
+      "comment_id": 3,
+      "body": "He owes us a lot of money",
+      "created_at": "11/29/2021"
     }
   ]
 }

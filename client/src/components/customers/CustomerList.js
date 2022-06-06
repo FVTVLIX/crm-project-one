@@ -1,5 +1,5 @@
 import React from 'react'
-import { List, Datagrid, TextField, EditButton, DeleteButton, TextInput, ReferenceInput, SelectInput, ReferenceField, NumberField } from 'react-admin'
+import { List, Datagrid, TextField, EditButton, DeleteButton, TextInput, ReferenceInput, SelectInput, ReferenceField, NumberField, ReferenceArrayField, SingleFieldList, ChipField } from 'react-admin'
 
 // const customerFilters = [
 //     <TextInput source='FirstName' label="Search" alwaysOn />,
@@ -9,6 +9,9 @@ import { List, Datagrid, TextField, EditButton, DeleteButton, TextInput, Referen
 // ];
 
 const CustomerList = (props) => {
+
+  const tagSort = { field: 'name.en', order: 'ASC' };
+
   return (
     <List {...props} 
     // filters={customerFilters}

@@ -23,15 +23,15 @@ const Header = () => {
                         <Box display="flex" alignItems="center">
                             <Box
                                 component="img"
-                                sx={{ marginRight: '1em', height: 30 }}
+                                sx={{ marginRight: '1em', height: 40 }}
                                 src={
                                     'https://www.nocompromisegaming.com/static/version1654172785/frontend/NCGaming/default/en_US/images/logo.png'
                                 }
                                 alt="NCG Logo"
                             />
-                            <Typography component="span" variant="h5">
+                            {/* <Typography component="span" variant="h5">
                                 NCG
-                            </Typography>
+                            </Typography> */}
                         </Box>
                         <Box>
                             <Tabs

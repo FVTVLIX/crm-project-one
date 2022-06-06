@@ -12,7 +12,7 @@ const Layout = (props: LayoutProps) => {
         <>
             <CssBaseline />
             <Header />
-            <Container sx={{ maxWidth: { xl: 1440 } }}>
+            <Container sx={{ maxWidth: { xl: 2140 } }}>
                 <main id="main-content">
                     {/* @ts-ignore */}
                     <ErrorBoundary FallbackComponent={Error}>
