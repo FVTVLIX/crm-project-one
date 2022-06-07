@@ -1,22 +1,30 @@
 import React from 'react'
-import { Show, SimpleShowLayout, TextField, DateField, RichTextField, useRecordContext, TabbedShowLayout, Tab } from 'react-admin';
+import { Show, SimpleShowLayout, TextField, DateField, RichTextField, useRecordContext, TabbedShowLayout, Tab, TopToolbar, EditButton, Button, EmailField } from 'react-admin';
+import { Divider } from '@mui/material'
 
 const CustomerShow = (props) => {
+
+    const custStyle = {
+        fontSize: '35px'
+    }
 
     const CustomerTitle = () => {
         const record = useRecordContext();
         if (!record) return null;
-        return <span>Customer "{record.title}"</span>
+        return <span style={custStyle}>{record.FirstName} {record.LastName}</span>
     }
 
     return (
         <>
-            <Show title={<CustomerTitle />}>
-                <SimpleShowLayout>
-                    <TextField disabled source='id' />
-                    <TextField source='FirstName' />
-                    <TextField source='LastName' />
+
+            <Show sx={{ width: 500, }}>
+                <SimpleShowLayout divider={<Divider flexItem />}>
+                    <CustomerTitle />
+                    {/* <TextField disabled source='id' /> */}
+                    {/* <TextField source='FirstName' />
+                    <TextField source='LastName' /> */}
                     <TextField source='PhoneNumber' />
+                    <EmailField source='Email' />
                     <TextField disabled source='AgreementNumber' />
                     <TextField source='CreditsPaid' />
                     <TextField disabled source='Term' />
@@ -28,7 +36,7 @@ const CustomerShow = (props) => {
             <Show>
                 <TabbedShowLayout>
                     <Tab label='Comments'>
-                    <TextField multiline source='Comments' />
+                        <TextField multiline source='Comments' />
                     </Tab>
                 </TabbedShowLayout>
             </Show>

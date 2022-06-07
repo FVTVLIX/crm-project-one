@@ -10,13 +10,13 @@ import { List, Datagrid, TextField, EditButton, DeleteButton, TextInput, Referen
 
 const CustomerList = (props) => {
 
-  const tagSort = { field: 'name.en', order: 'ASC' };
+  const tagSort = { field: 'FirstName', order: 'ASC' };
 
   return (
     <List {...props} 
     // filters={customerFilters}
     >
-        <Datagrid rowClick="edit">
+        <Datagrid rowClick="show">
             <ReferenceField source='id' reference='customers'>
                 <TextField source='id' />
             </ReferenceField>

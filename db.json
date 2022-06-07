@@ -8,6 +8,7 @@
       "FirstName": "Ted",
       "LastName": "Flanders",
       "PhoneNumber": "615-459-5194",
+      "Email": "test@gmail.com",
       "AgreementNumber": "10015316",
       "CreditsPaid": 43.333,
       "Term": 78,
@@ -25,6 +26,7 @@
       "FirstName": "Hugh",
       "LastName": "Jazz",
       "PhoneNumber": "615-459-5194",
+      "Email": "test@gmail.com",
       "AgreementNumber": "10067426",
       "CreditsPaid": 20,
       "Term": 72,
@@ -38,16 +40,17 @@
       "FirstName": "big",
       "LastName": "booty",
       "PhoneNumber": "615-459-5194",
+      "Email": "test@gmail.com",
       "AgreementNumber": "21345235",
       "CreditsPaid": "23",
       "Term": "80",
       "DaysLate": "1234",
       "RentalDeferment": "23.23",
       "Comments": "He owes us a lot of money",
-      "id": 3
+      "id": 3,
+      "body": "This is a comment update"
     }
   ],
-
   "tags": [
     {
       "id": 1,
@@ -69,7 +72,6 @@
       "id": 3
     }
   ],
-
   "comments": [
     {
       "id": 1,
