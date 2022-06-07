@@ -1,5 +1,6 @@
 import React from 'react'
 import { Datagrid, Edit, ReferenceManyField, SimpleForm, TextInput, DateField } from 'react-admin'
+import { Paper } from '@mui/material'
 
 const CustomerEdit = (props) => {
   return (
@@ -19,6 +20,7 @@ const CustomerEdit = (props) => {
           <DateField source="created_at" />
           </Datagrid>
         </ReferenceManyField>
+      <Paper elevation={24} />
       </SimpleForm>
     </Edit>
   )
