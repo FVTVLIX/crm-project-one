@@ -7,8 +7,8 @@ const Header = () => {
     const location = useLocation();
 
     let currentPath = '/';
-    if (!!matchPath('/contacts/*', location.pathname)) {
-        currentPath = '/contacts';
+    if (!!matchPath('/comments/*', location.pathname)) {
+        currentPath = '/comments';
     } else if (!!matchPath('/inventory/*', location.pathname)) {
         currentPath = '/inventory';
     } else if (!!matchPath('/tags/*', location.pathname)) {
@@ -47,10 +47,10 @@ const Header = () => {
                                     value="/"
                                 />
                                 <Tab
-                                    label={'Contacts'}
+                                    label={'Comments'}
                                     component={Link}
-                                    to="/contacts"
-                                    value="/contacts"
+                                    to="/comments"
+                                    value="/comments"
                                 />
                                 <Tab
                                     label={'Inventory'}

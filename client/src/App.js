@@ -1,11 +1,13 @@
 import React from 'react'
-import { Admin, Resource } from 'react-admin';
-import dataProvider from './dataProvider';
+import { Admin, Resource, ListGuesser } from 'react-admin';
 import restProvider from 'ra-data-simple-rest'
 import CustomerList from './components/customers/CustomerList'
 import CustomerCreate from './components/customers/CustomerCreate'
 import CustomerEdit from './components/customers/CustomerEdit'
 import CustomerShow from './components/customers/CustomerShow';
+
+import CommentList from './components/comments/CommentList';
+import CommentEdit from './components/comments/CommentEdit';
 import Layout from './Layout'
 
 function App() {
@@ -29,6 +31,12 @@ function App() {
         show={CustomerShow}
         edit={CustomerEdit}
       />
+
+      <Resource name='comments' 
+      list={CommentList}
+      edit={CommentEdit}
+      />
+
     </Admin>
   );
 }
