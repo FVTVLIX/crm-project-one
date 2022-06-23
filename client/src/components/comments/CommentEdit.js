@@ -17,7 +17,7 @@ const CommentEdit = () => {
     <Edit>
         <Datagrid rowClick="edit">
             <TextInput disabled source="id" />
-            <ReferenceField source="comment_id" reference="comments"><TextField source="id" /></ReferenceField>
+            <ReferenceField source="comment_id" reference="comments"><TextField source="comment_id" /></ReferenceField>
             <TextInput multiline source="body" />
             <TextInput source="created_at" />
         </Datagrid>
