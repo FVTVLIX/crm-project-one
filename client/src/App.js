@@ -9,6 +9,7 @@ import CustomerShow from './components/customers/CustomerShow';
 import CommentList from './components/comments/CommentList';
 import CommentEdit from './components/comments/CommentEdit';
 import Layout from './Layout'
+import CommentCreate from './components/comments/CommentCreate';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
       <Resource name='comments' 
       list={CommentList}
       edit={CommentEdit}
+      create={CommentCreate}
       />
 
     </Admin>

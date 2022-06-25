@@ -132,12 +132,12 @@ const CustomerShow = (props) => {
                             sx={{ width: 400 }}
                             // actions={CustomerShowActions}
                         >
-                            <EditButton variant="contained" style={editButtonStyle} />
+                            {/* <EditButton variant="contained" style={editButtonStyle} /> */}
 
                             <SimpleShowLayout
                             // divider={<Divider flexItem />}
                             >
-                                <Divider />
+                                {/* <Divider /> */}
                                 <CustomerTitle />
                                 {/* <TextField disabled source='id' /> */}
                                 {/* <TextField source='FirstName' />
